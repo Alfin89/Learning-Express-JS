@@ -1,13 +1,15 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
+<%- include('partials/header.ejs') %>
+
+<%- include('partials/navbar.ejs') %>
     <h1>Halaman Home</h1>
     <h4><%= 12 + 31 + ' ALfin kamil'.toUpperCase() %></h4>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi delectus impedit quas incidunt harum porro, eligendi quasi accusamus aliquam, dolore repellendus, quo modi omnis dolores accusantium dolorem natus! Doloremque, ipsum!</p>
-</body>
-</html>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing el/navbar.ejselectus impedit quas incidunt harum porro, eligendi quasi accusamus aliquam, dolore repellendus, quo modi omnis dolores accusantium dolorem natus! Doloremque, ipsum!</p>
+    <h5>Peserta WMK</h5>
+    <ul>
+        <% for (let wir of wmk) { %>
+            <li>
+                <%= wir %>
+            </li>
+        <% } %>
+    </ul>
+<%- include('partials/footer.ejs') %>
