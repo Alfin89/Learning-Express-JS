@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Menggunakan Method Get</h1>
+    <form action="http://localhost:3000/order" method="get">
+        <input type="text" name="name" id="">
+        <input type="number" name="quantity" id="">
+        <button type="submit">Simpan</button>
+    </form>
+
+    <h1>Menggunakan Method Post</h1>
+    <form action="http://localhost:3000/order" method="post">
+        <input type="text" name="name" id="">
+        <input type="number" name="quantity" id="">
+        <button type="submit">Simpan</button>
+    </form>
+
+    <h1><%= name %></h1>
+    <h1><%= quantity %></h1>
+</body>
+</html>
